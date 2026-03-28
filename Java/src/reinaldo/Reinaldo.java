@@ -54,7 +54,6 @@ public class Reinaldo {
 		System.out.println(contador);
 	}
 
-	// No vale para palabras con letras duplicadas.
 	public static void main(String args[]) {
 		in = new Scanner(System.in);
 
