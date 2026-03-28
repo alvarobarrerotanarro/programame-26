@@ -35,6 +35,19 @@ public class Spiderman {
 		return true;
 	}
 
+	/*
+	 * Me parece que hay un problema de interpretacion con el ejercicio si bien en
+	 * el escenario:
+	 * 
+	 * 5 2 4 1 1 1
+	 * 
+	 * Podemos ordenar: 1 1 1 2 4
+	 * 
+	 * y sumar 2 + 6, que es > 5 (dos sumandos alcanzan sobrepasando el 5)
+	 * 
+	 * la suma que mejor se ajusta seria: 4 + 1 = 5 porque esta pegado del 5 (y da
+	 * la casualidad que la misma cantidad de sumandos, de ahi la confusion)
+	 */
 	public static void main(String args[]) {
 		in = new Scanner(System.in);
 		Spiderman sp = new Spiderman();

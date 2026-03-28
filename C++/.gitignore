@@ -1,0 +1,87 @@
+# =========================
+
+# Visual Studio
+
+# =========================
+
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# CMake
+
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CMakeScripts/
+Testing/
+CTestTestfile.cmake
+_deps/
+
+# CMake build directories (common patterns)
+
+build*/
+cmake-build-*/
+out/build/
+
+# Compiled binaries
+
+# =========================
+
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+*.obj
+*.o
+*.pdb
+*.idb
+
+# Logs and temp files
+
+# =========================
+
+*.log
+*.tlog
+*.tmp
+*.cache
+
+# IntelliSense / VS cache
+
+# =========================
+
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+
+# OS generated files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# Optional: Visual Studio Code (if you use it)
+
+# =========================
+
+.vscode/
