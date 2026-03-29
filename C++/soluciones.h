@@ -8,4 +8,5 @@ namespace lanzadores {
 	void bazar();
 	void spiderman();
 	void reinaldo();
+	void juego_de_la_vida();
 }

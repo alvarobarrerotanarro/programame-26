@@ -10,6 +10,7 @@
 */
 static std::string leer_sin_espacios() {
 	std::string linea{};
+	linea.reserve(1024);
 	char ch = '\0';
 
 	do {
@@ -27,7 +28,7 @@ static std::string leer_sin_espacios() {
 */
 
 template <typename T, typename U>
-U get_or_default(std::map<T, U>& m, const T& k, U d) {
+static U get_or_default(std::map<T, U>& m, const T& k, U d) {
 	if (m.contains(k)) {
 		return m.at(k);
 	}
@@ -36,7 +37,7 @@ U get_or_default(std::map<T, U>& m, const T& k, U d) {
 }
 
 template <typename T, typename U>
-bool compare_map(std::map<T, U>& first, std::map<T, U> second)
+static bool compare_map(std::map<T, U>& first, std::map<T, U> second)
 {
 	U first_value, second_value;
 	bool comparation = true;
@@ -90,6 +91,20 @@ static void casoPrueba() {
 
 	std::cout << contador << '\n';
 }
+
+/*
+
+# Casos de prueba:
+
+3
+elleridanoibariendolagracia
+reinaldo
+alinderolaslindesconladierno
+reinaldo
+amamantarla
+naltram
+
+*/
 
 void lanzadores::reinaldo() {
 	int n;
