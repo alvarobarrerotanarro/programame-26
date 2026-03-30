@@ -49,28 +49,19 @@ public class JuegoDeLaVida {
 		int numColumnas = tablero[0].length;
 		int contador = 0;
 
-		int filaActual, columnaActual;
+		// Vamos a la fila anterior de forma segura (modulo).
+		int filaActual = (fila + (numFilas - 1)) % numFilas;
+		int columnaActual;
 
-		// Fila anterior de forma segura
-		if (fila - 1 < 0) {
-			filaActual = numFilas - 1;
-		} else {
-			filaActual = fila - 1;
-		}
 
 		/*
 		 * Incrementamos fila y columna actual de forma segura (modulo) tres veces
 		 * porque 3 x 3 genera una regilla de 9 espacios.
 		 */
-
 		for (int i = 0; i < 3; i++) {
 
 			// Por cada fila hay que volver a resetear la columna
-			if (columna - 1 < 0) {
-				columnaActual = numColumnas - 1;
-			} else {
-				columnaActual = columna - 1;
-			}
+			columnaActual = (columna + (numColumnas - 1)) % numColumnas;
 
 			for (int j = 0; j < 3; j++) {
 
