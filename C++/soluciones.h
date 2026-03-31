@@ -1,6 +1,7 @@
 #pragma once
 
-namespace lanzadores {
+namespace lanzadores
+{
 	void cadenas();
 	void termostato();
 	void tasa_rendimiento();
@@ -10,4 +11,5 @@ namespace lanzadores {
 	void reinaldo();
 	void juego_de_la_vida();
 	void cadena_adn();
+	void ballet();
 }

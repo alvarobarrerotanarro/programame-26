@@ -3,6 +3,6 @@
 
 int main()
 {
-	lanzadores::cadena_adn();
+	lanzadores::ballet();
 	return 0;
 }
