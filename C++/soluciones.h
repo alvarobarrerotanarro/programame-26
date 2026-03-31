@@ -9,4 +9,5 @@ namespace lanzadores {
 	void spiderman();
 	void reinaldo();
 	void juego_de_la_vida();
+	void cadena_adn();
 }

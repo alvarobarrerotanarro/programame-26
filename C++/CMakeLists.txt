@@ -13,9 +13,9 @@ project ("C++")
 
 # Add source to this project's executable.
 file(GLOB ficheros_fuente "*.cpp")
-add_executable (C++ ${ficheros_fuente} "soluciones.h")
+add_executable (C++ ${ficheros_fuente})
 
-# target_include_directories(C++ PUBLIC "${CMAKE_SOURCE_DIR}")
+target_include_directories(C++ PUBLIC "${CMAKE_SOURCE_DIR}")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET C++ PROPERTY CXX_STANDARD 20)

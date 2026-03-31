@@ -3,6 +3,6 @@
 
 int main()
 {
-	lanzadores::juego_de_la_vida();
+	lanzadores::cadena_adn();
 	return 0;
 }
